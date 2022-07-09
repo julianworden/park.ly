@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB3028072879F8ED0089F424 /* ViewController+MapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3028062879F8ED0089F424 /* ViewController+MapKit.swift */; };
 		ABCBCEC828772C93006688D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCBCEC728772C93006688D0 /* AppDelegate.swift */; };
 		ABCBCECA28772C93006688D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCBCEC928772C93006688D0 /* SceneDelegate.swift */; };
 		ABCBCECC28772C93006688D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCBCECB28772C93006688D0 /* ViewController.swift */; };
 		ABCBCECF28772C93006688D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCBCECD28772C93006688D0 /* Main.storyboard */; };
 		ABCBCED128772C93006688D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCBCED028772C93006688D0 /* Assets.xcassets */; };
 		ABCBCED428772C93006688D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCBCED228772C93006688D0 /* LaunchScreen.storyboard */; };
+		ABDE22462879187D00B6EA37 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE22452879187D00B6EA37 /* ParkingSpot.swift */; };
+		ABEE0FDD287867950050A9E2 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE0FDC287867950050A9E2 /* RoundButton.swift */; };
+		ABEE0FE028787CDE0050A9E2 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE0FDF28787CDE0050A9E2 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB3028062879F8ED0089F424 /* ViewController+MapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+MapKit.swift"; sourceTree = "<group>"; };
 		ABCBCEC428772C93006688D0 /* park.ly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = park.ly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABCBCEC728772C93006688D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABCBCEC928772C93006688D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		ABCBCED028772C93006688D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABCBCED328772C93006688D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABCBCED528772C93006688D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABDE22452879187D00B6EA37 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
+		ABEE0FDC287867950050A9E2 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		ABEE0FDF28787CDE0050A9E2 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB3028052879F8D70089F424 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB3028062879F8ED0089F424 /* ViewController+MapKit.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		ABCBCEBB28772C92006688D0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +74,49 @@
 			children = (
 				ABCBCEC728772C93006688D0 /* AppDelegate.swift */,
 				ABCBCEC928772C93006688D0 /* SceneDelegate.swift */,
-				ABCBCECB28772C93006688D0 /* ViewController.swift */,
 				ABCBCECD28772C93006688D0 /* Main.storyboard */,
-				ABCBCED028772C93006688D0 /* Assets.xcassets */,
 				ABCBCED228772C93006688D0 /* LaunchScreen.storyboard */,
+				ABCBCED028772C93006688D0 /* Assets.xcassets */,
+				ABEE0FE128787CF40050A9E2 /* Services */,
+				AB3028052879F8D70089F424 /* Extensions */,
+				ABEE0FDB287867420050A9E2 /* Model */,
+				ABEE0FDA287867360050A9E2 /* View */,
+				ABEE0FD9287867340050A9E2 /* Controller */,
 				ABCBCED528772C93006688D0 /* Info.plist */,
 			);
 			path = park.ly;
+			sourceTree = "<group>";
+		};
+		ABEE0FD9287867340050A9E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABCBCECB28772C93006688D0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ABEE0FDA287867360050A9E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE0FDC287867950050A9E2 /* RoundButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABEE0FDB287867420050A9E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABDE22452879187D00B6EA37 /* ParkingSpot.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABEE0FE128787CF40050A9E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE0FDF28787CDE0050A9E2 /* LocationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +129,7 @@
 				ABCBCEC028772C92006688D0 /* Sources */,
 				ABCBCEC128772C92006688D0 /* Frameworks */,
 				ABCBCEC228772C92006688D0 /* Resources */,
+				ABEE0FDE28786BD10050A9E2 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -133,13 +186,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ABEE0FDE28786BD10050A9E2 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABCBCEC028772C92006688D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEE0FDD287867950050A9E2 /* RoundButton.swift in Sources */,
 				ABCBCECC28772C93006688D0 /* ViewController.swift in Sources */,
+				ABDE22462879187D00B6EA37 /* ParkingSpot.swift in Sources */,
 				ABCBCEC828772C93006688D0 /* AppDelegate.swift in Sources */,
+				ABEE0FE028787CDE0050A9E2 /* LocationService.swift in Sources */,
+				AB3028072879F8ED0089F424 /* ViewController+MapKit.swift in Sources */,
 				ABCBCECA28772C93006688D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +370,6 @@
 				INFOPLIST_FILE = park.ly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +397,6 @@
 				INFOPLIST_FILE = park.ly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
